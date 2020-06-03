@@ -1,0 +1,60 @@
+//toggle styling
+.toggle {
+  &__input {
+    // display: none; //becomes inaccessible for ppl not using trackpad/mouse
+    // visibility: hidden;
+    opacity: 0; // use this
+  }
+
+  &__switch {
+    position: relative;
+    top: -5px;
+    margin: 0 2rem;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    height: 3.2rem;
+    width: 5.6rem;
+    border: none;
+    border-radius: 10rem;
+    background: var(--color-primary);
+
+    &::after {// this is the whitish sphere
+      content: "";
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 2.4rem;
+      max-width: 2.5rem;
+      // height: calc(100% - .6rem);
+      // max-width: calc(100% - 3rem);
+      width: 100%;
+      border-radius: 50%;
+      background-color: var(--color-neutral-1);
+      margin-left: 0.5rem;
+      transition: transform 0.35s ease-in-out;
+    }
+  }
+
+  &__label{
+    display: inline-flex;
+    justify-content: center;
+    align-content: center;
+    color: var(--color-neutral-2);
+  }
+}
+
+//what should happen when the toggle is checked
+//to move the switch
+.toggle__input:checked ~ .toggle__switch::after {
+  transform: translateX(2.2rem);
+}
+
+//to change card values
+.toggle__input:checked ~* .card__heading-price-monthly{
+  display: inline-block; //initially was set to none in the card
+}
+
+.toggle__input:checked ~* .card__heading-price-annually{
+  display: none; //initially set to inline-block in the card
+}

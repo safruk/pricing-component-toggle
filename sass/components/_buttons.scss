@@ -1,0 +1,45 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    height: 4.5rem;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 28rem;
+    text-decoration: none;
+    border-radius: .5rem;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+
+  &:hover,
+  &:active{
+    color: var(--color-primary);
+    background-image: var(--color-neutral-2);
+    border: 1px solid var(--color-button);
+
+    &::after {
+      transform: scaleX(1.4) scaleY(1.6);
+      opacity: 0;
+    }
+  }
+//button variant styles
+  &--basic,
+  &--master{
+    background-image: var(--color-primary);
+    color: var(--color-neutral-1);
+  }
+  &--pro{
+    background-image: none;
+    background-color:  var(--color-neutral-1);
+    color: var(--color-button);
+
+    &:hover,
+    &:active{
+      color:  var(--color-neutral-1) ;
+      background-color: var(--color-button);
+      border: 1px solid  var(--color-neutral-1);
+    }
+  }
+}

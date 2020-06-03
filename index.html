@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Frontend Mentor | [pricing-component-toggle]</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <!-- <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style> -->
+</head>
+
+<body>
+  <header class="header">
+    <h1 class="heading-primary header__heading-primary">Our Pricing</h1>
+    <!-- keep the checkbox input at the same level as the card-section so as to access the monthly and annual price values via sibling selector -->
+    <input type="checkbox" class="toggle__input" name="toggle" value="dark-mode" id="toggle-chk" checked />
+
+    <span class="toggle__label">Annually</span>
+    <label for="toggle-chk" class="toggle__switch"></label>
+    <span class="toggle__label">Monthly</span>
+
+    <div class="header__card-section">
+      <div class="card card--basic">
+        <h5 class="card__heading">Basic</h5>
+        <h2>
+          <span class="dollar">&dollar;</span>
+          <span class="card__heading-price-monthly">19.99</span>
+          <span class="card__heading-price-annually">199.99</span>
+        </h2>
+        <!-- <h2 class="card__heading-price-annually">&dollar;199.99</h2> -->
+        <h6 class="card__heading-sub">500 GB Storage</h6>
+        <h6 class="card__heading-sub">2 Users Allowed</h6>
+        <h6 class="card__heading-sub">Send up to 3 GB</h6>
+        <a href="#" class="btn btn--basic">Learn More</a>
+      </div>
+
+      <div class="card card--pro">
+        <h5 class="card__heading">Professional</h5>
+        <h2>
+          <span class="dollar">&dollar;</span>
+          <span class="card__heading-price-monthly">24.99</span>
+          <span class="card__heading-price-annually">249.99</span>
+        </h2>
+        <!-- <h2 class="card__heading-price-annually">&dollar;249.99</h2> -->
+        <h6 class="card__heading-sub"> 1 TB Storage</h6>
+        <h6 class="card__heading-sub">5 Users Allowed</h6>
+        <h6 class="card__heading-sub">Send up to 10 GB</h6>
+        <a href="#" class="btn btn--pro">Learn More</a>
+      </div>
+
+      <div class="card card--master">
+        <h5 class="card__heading">Master</h5>
+        <h2>
+          <span class="dollar">&dollar;</span>
+          <span class="card__heading-price-monthly">39.99</span>
+          <span class="card__heading-price-annually">399.99</span>
+        </h2>
+        <!-- <h2 class="card__heading-price-annually">&dollar;399.99</h2> -->
+        <h6 class="card__heading-sub">2 TB Storage</h6>
+        <h6 class="card__heading-sub">10 Users Allowed</h6>
+        <h6 class="card__heading-sub">Send up to 20 GB</h6>
+        <a href="#" class="btn btn--master">Learn More</a>
+      </div>
+    </div>
+    <p class="attribution">
+      Challenge by <a class="attribution" href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+      Coded by <a class="attribution" href="https://safruk.github.io/Safas-website">Safa Ruknuddin &rarr;</a>
+    </p>
+  </header>
+</body>
+</html>

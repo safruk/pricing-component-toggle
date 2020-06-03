@@ -1,0 +1,52 @@
+//general typography styles
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.heading-primary {
+  font-size: 3.2rem;
+}
+
+//card typography
+
+.card {
+  &__heading {
+    font-size: 1.8rem;
+  }
+
+  &__heading-sub {
+    font-size: 1.5rem;
+  }
+
+  &__heading-price-monthly {
+    font-size: 6.5rem;
+  }
+
+  &__heading-price-annually {
+    font-size: 6.5rem;
+  }
+}
+
+.dollar {
+  font-size: 4rem;
+}
+
+//button style
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    font-size: 1.3rem;
+  }
+}
+
+//attribution-frontendmentor
+
+.attribution {
+  font-size: 1.3rem;
+}

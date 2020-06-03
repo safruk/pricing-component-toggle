@@ -1,0 +1,22 @@
+:root {
+  // ## Colors
+  //
+  // ### Primary
+  //
+  // - Linear Gradient: hsl(236, 72%, 79%) to hsl(237, 63%, 64%)
+  //
+  --color-primary: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --color-primary-bottom: linear-gradient(to bottom, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  --color-button: hsl(237, 63%, 64%);
+  // ### Neutral
+  //
+  // - Very Light Grayish Blue: hsl(240, 78%, 98%)
+  // - Light Grayish Blue: hsl(234, 14%, 74%)
+  // - Grayish Blue: hsl(233, 13%, 49%)
+  // - Dark Grayish Blue: hsl(232, 13%, 33%)
+  //
+  --color-neutral-1: hsl(240, 78%, 98%);
+  --color-neutral-2: hsl(234, 14%, 74%);
+  --color-neutral-3: hsl(233, 13%, 49%);
+  --color-neutral-4: hsl(232, 13%, 33%);
+}

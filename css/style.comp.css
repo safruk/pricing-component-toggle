@@ -33,11 +33,11 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url("../images/bg-top.svg") no-repeat top right -50%/50% 50%;
+  background: url("./images/bg-top.svg") no-repeat top right -50%/50% 50%;
   background-color: var(--color-neutral-1); }
   @media only screen and (min-width: 56.25em) {
     body {
-      background: url("../images/bg-top.svg") no-repeat top right, url("../images/bg-bottom.svg") no-repeat left bottom;
+      background: url("./images/bg-top.svg") no-repeat top right, url("./images/bg-bottom.svg") no-repeat left bottom;
       background-color: var(--color-neutral-1); } }
 
 body {

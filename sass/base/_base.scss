@@ -36,10 +36,10 @@ body {
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  background: url("../images/bg-top.svg") no-repeat top right -50% / 50% 50%; //set background to be responsive.Can be changed through trial and error.for now this works best
+  background: url("./images/bg-top.svg") no-repeat top right -50% / 50% 50%; //set background to be responsive.Can be changed through trial and error.for now this works best
   background-color: var(--color-neutral-1);
   @include respond(tab-land) {
-    background: url("../images/bg-top.svg") no-repeat top right, url("../images/bg-bottom.svg") no-repeat left bottom;
+    background: url("./images/bg-top.svg") no-repeat top right, url("./images/bg-bottom.svg") no-repeat left bottom;
     background-color: var(--color-neutral-1);
   }
 }
